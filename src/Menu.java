@@ -60,12 +60,13 @@ public class Menu {
                     sc.nextLine();
                     System.out.println("\nIngrese el nombre del estudiante:\n ");
                     String nombre = sc.nextLine();
+                    System.out.println("\nIngrese la estatura del estudiante: ");
+                    String estatura = sc.nextLine();
                     System.out.println("\nIngrese el codigo del estudiante:\n ");
                     int codigo = sc.nextInt();
                     System.out.println("\nIngrese la edad del estudiante:\n ");
                     int edad = sc.nextInt();
-                    System.out.println("\nIngrese la estatura del estudiante: ");
-                    String estatura = sc.nextLine();
+
                     objetivo.add(new Estudiante(nombre, codigo, edad, estatura));
                     guardarEstudiantes(file, objetivo);
                     break;
